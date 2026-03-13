@@ -1,20 +1,67 @@
-<<<<<<< HEAD
-# React + Vite
+# Password Reset Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend for the Password Reset application built using React and Bootstrap. It allows users to register, login, request a password reset, and update their password using a secure token.
 
-Currently, two official plugins are available:
+## Live Demo
+Frontend URL:
+https://password-reset-frontend-n8n5fem0s.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Backend API:
+https://password-reset-backend-lac.vercel.app
 
-## React Compiler
+## Features
+- User Registration
+- User Login
+- Forgot Password
+- Password Reset via Email Link
+- Responsive UI using Bootstrap
+- Secure token-based password reset
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+- React
+- Bootstrap
+- Axios
+- React Router
 
-## Expanding the ESLint configuration
+## Folder Structure
+src
+components
+pages
+api
+App.jsx
+main.jsx
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# password_reset_frontend
->>>>>>> a259553b0442814ee077f9ec115d7b8d90d29569
+## Installation
+
+Clone the repository:
+
+git clone https://github.com/praveenkumar-834/password_reset_frontend.git
+
+Navigate to the project folder:
+
+cd password_reset_frontend
+
+Install dependencies:
+
+npm install
+
+Start development server:
+
+npm run dev
+
+## Environment Setup
+Create a `.env` file if needed:
+
+VITE_API_URL=https://password-reset-backend-lac.vercel.app
+
+## Deployment
+Frontend is deployed using Vercel.
+
+## Available Routes
+/ → Login page  
+/register → Register page  
+/forgot-password → Request password reset  
+/reset-password/:token → Reset password form
+
+## Author
+Praveen Kumar
