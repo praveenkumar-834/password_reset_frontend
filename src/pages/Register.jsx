@@ -1,8 +1,10 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import axios from "axios"
 
 function Register(){
 
+const navigate = useNavigate()
 const [form,setForm] = useState({
 username:"",
 email:"",
@@ -89,8 +91,14 @@ Register
 {message}
 </div>
 )}
-
+<button
+className="btn btn-success mt-3"
+onClick={()=>navigate("/login")}
+>
+Go to Login
+</button>
 </div>
+
 
 </div>
 

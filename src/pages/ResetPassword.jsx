@@ -1,9 +1,10 @@
 import {useParams} from "react-router-dom"
 import {useState} from "react"
 import axios from "axios"
+import { useNavigate } from "react-router-dom"
 
 function ResetPassword(){
-
+const navigate = useNavigate()
 const {token} = useParams()
 
 const [password,setPassword] = useState("")
@@ -61,6 +62,13 @@ Update Password
 {message}
 </div>
 )}
+
+<button
+className="btn btn-success mt-3"
+onClick={()=>navigate("/login")}
+>
+Go to Login
+</button>
 
 </div>
 
